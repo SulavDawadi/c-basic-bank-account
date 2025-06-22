@@ -1,0 +1,14 @@
+
+Create a BankAccount class that encapsulates the account balance.
+
+The balance should be private.
+
+Provide public methods to:
+
+Deposit money (add to balance)
+
+Withdraw money (subtract from balance, but only if enough balance exists)
+
+Check the current balance
+
+Write a program to demonstrate depositing, withdrawing, and checking balance using this class.
