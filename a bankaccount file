@@ -1,0 +1,61 @@
+#include <iostream>
+using namespace std;
+class bankaccount {
+private:
+    float balance;
+public:
+bankaccount() {
+  balance = 0;
+}
+void  setdeposit (float money){
+if (money >0){
+  balance += money;
+}
+}
+float getdeposit {
+  return balance;
+  }
+void setwithdrawal(float money){
+  if (money>0 && balance>=money ){
+    balance -=money;
+  }
+}
+float getwithdrawal(){
+  return balance; 
+  }
+void checking() {
+  cout << "the balance on the account is "<< balance;
+  }
+   };
+int main (){
+  bankaccount b1;
+  float money ;
+  int option;
+  cout << "enter the money ";
+  cin >> money ;
+  cout << "what do you want to do ";
+  cin >> option;
+  switch (option){
+    case 1: {
+      // to deposti money 
+    b1.setdeposit(money);
+    b1.getdeposit;
+    cout << "Current balance: " << b1.getdeposit() << endl;
+      break;
+    }
+    case 2:{
+      // to withdraw money 
+      b1.setwithdrawal(money);
+      b1.getwithdrawal;
+      cout << "Current balance: " << b1.getwithdrawal() << endl;
+      break;
+        }
+    case 3:{
+      b1.checking();
+      break;
+    }
+    default:{
+      cout << "invalid input ";
+    }
+  }  return 0 ;
+}
