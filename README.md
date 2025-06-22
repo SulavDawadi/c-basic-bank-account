@@ -1,2 +1,2 @@
-# c-basic-bank-account
+# c++-basic-bank-account
 just another encapsulation programme
